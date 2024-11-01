@@ -4,6 +4,7 @@
   --ink: hsla(117, 88%, 48%, 0.95);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
+  --box_shado:rgb(54, 54, 54);
 }
 * {
   list-style-type: none;
@@ -26,14 +27,14 @@ h2 {
 h3 {
   color: var(--ink);
 }
-.first__section,
-.secont__section {
+#first__section,
+#secont__section {
   height: 100%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.header {
+#header {
   display: flex;
   background-color: var(--paper);
   justify-content: space-between;
@@ -68,15 +69,11 @@ h3 {
   width: 40%;
   text-align: left;
 }
-.contex__1 {
-}
 .contex__2 {
   margin-top: 40px;
 }
 .contex__2 h3 {
   margin-top: 10px;
-}
-.main__img {
 }
 .main__img img {
   border-radius: 30%;
@@ -104,32 +101,32 @@ h3 {
 }
 /* secont__section */
 /* __My projects__ */
-.secont__section {
+#secont__section {
   height: 100%;
   z-index: 1;
   position: relative;
 }
-.Projects {
+#Projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   gap: 20px;
 }
-.secont__section h1 {
+#secont__section h1 {
   padding: 20px 0;
 }
 .project__img {
-  box-shadow: 1px 1px 1px 1px rgb(54, 54, 54);
+  box-shadow: 0px 0px 0px 1px var(--box_shado)
 }
-.Projects img {
+#Projects img {
   width: 250px;
 }
-.footer {
+#footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--paper);
   margin-top: 20px;
-  box-shadow: 0px 0px 0px 1px rgb(86, 85, 85);
+  box-shadow: 0px 0px 0px 1px var(--box_shado)
 }
 .footer__about,
 .footer__contac {
