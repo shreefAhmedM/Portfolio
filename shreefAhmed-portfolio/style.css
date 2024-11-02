@@ -1,0 +1,159 @@
+/* Design color */
+:root {
+  --paper: rgb(211, 212, 212);
+  --ink: hsla(117, 88%, 48%, 0.95);
+  --font: "Raleway", system-ui, sans-serif;
+  --gap: 20px;
+  --box_shado:rgb(54, 54, 54);
+}
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: var(--font);
+  text-align: center;
+  line-height: 1.7rem;
+}
+h1,
+h2 {
+  color: var(--brand);
+}
+
+h3 {
+  color: var(--ink);
+}
+#first__section,
+#secont__section {
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  display: flex;
+  background-color: var(--paper);
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 10px 20px;
+}
+.header__logo img {
+  width: 50px;
+}
+
+.header__menu {
+  width: 27%;
+}
+.header__menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--gap);
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 25px 0;
+}
+.main__contex {
+  width: 40%;
+  text-align: left;
+}
+.contex__2 {
+  margin-top: 40px;
+}
+.contex__2 h3 {
+  margin-top: 10px;
+}
+.main__img img {
+  border-radius: 30%;
+  width: 400px;
+}
+.about__ski__tech {
+  background-color: var(--paper);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.mySkills,
+.lan__tech {
+  width: 45%;
+  text-align: center;
+  height: 130px;
+  margin-top: 30px;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: var(--gap);
+}
+/* secont__section */
+/* __My projects__ */
+#secont__section {
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+#Projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+#secont__section h1 {
+  padding: 20px 0;
+}
+.project__img {
+  box-shadow: 0px 0px 0px 1px var(--box_shado)
+}
+#Projects img {
+  width: 250px;
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--paper);
+  margin-top: 20px;
+  box-shadow: 0px 0px 0px 1px var(--box_shado)
+}
+.footer__about,
+.footer__contac {
+  width: 40%;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background-color: rgb(43, 43, 235);
+}
+.footer__about ul {
+  display: flex;
+  justify-content: space-evenly;
+}
